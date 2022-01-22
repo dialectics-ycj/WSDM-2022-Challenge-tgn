@@ -36,7 +36,7 @@ python utils/preprocess_data.py --all
 ```
 It will preprocess the data, and store the result in `$PROJECT/data`.
 
-It will also generate a set of random numbers, and output them in `$PROJECT/data/output_A.csv`,`$PROJECT/data/output_B.csv`. These files are used to combine with the **intermediate ** prediction results to form `output.zip`. And `output.zip` will be submit to the  [quick evaluation platform](http://eval-env.eba-5u39qmpg.us-west-2.elasticbeanstalk.com/) automatically to evaluate our model. They will not affect  the **final test**.
+It will also generate a set of random numbers, and output them in `$PROJECT/data/output_A.csv`,`$PROJECT/data/output_B.csv`. These files are used to combine with the **intermediate** prediction results to form `output.zip`. And `output.zip` will be submit to the  [quick evaluation platform](http://eval-env.eba-5u39qmpg.us-west-2.elasticbeanstalk.com/) automatically to evaluate our model. They will not affect  the **final test**.
 
 ### Model Training
 Please note that it will generate `$RPOJECT/data/neighborFinder/neighborFineder_$DATA_NAME_full.pth` the **FIRST TIME** you run this code. Next time, these files will be used to accelerate data generation.
